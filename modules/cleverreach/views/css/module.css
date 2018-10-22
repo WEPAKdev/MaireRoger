@@ -1,0 +1,136 @@
+/**
+ * 2017 CleverReach
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to http://www.prestashop.com for more information.
+ *
+ * @author    CleverReach <partner@cleverreach.com>
+ * @copyright 2017 CleverReach GmbH
+ * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+
+/* Global CSS always on top of CSS file */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cr-logo {
+    margin: 5px 0 30px 0;
+}
+
+#cr-progress {
+    border-radius: 3px;
+    border: 1px solid #888;
+    background: #A8A8A8;
+    position: relative;
+}
+
+#cr-bar {
+    height: 29px; /* Not 30px because the 1px top-border brings it up to 30px to match #graph */
+    background: #00aff0;
+    width: 0;
+}
+
+#cr-bar p {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.clever-reach .nav.nav-tabs a.disabled {
+    cursor: not-allowed;
+}
+
+.clever-reach .nav.nav-tabs a.disabled:hover {
+    border-color: transparent;
+    color: #00aff0;
+}
+
+/** Containers **/
+
+.cr-loader-big {
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+}
+
+#cr-connect {
+    margin-right: 10px;
+}
+
+.cr-connected, .cr-connecting, .cr-disconnected {
+    display: none;
+    color: #00aff0;
+}
+
+/**
+ * Loader
+ */
+.cr-loader {
+    display: none;
+    float: left;
+    margin-right: 10px;
+    border: 3px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #00aff0;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    animation: spin 2s linear infinite;
+}
+
+.cr-loader-big .cr-loader {
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #00aff0;
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+}

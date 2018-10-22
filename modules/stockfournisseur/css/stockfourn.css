@@ -1,0 +1,30 @@
+#toorder-container{
+    float:left;
+}
+.toOrder-elem{
+    float:left;
+    margin-right:20px;
+}
+.toOrder-elem h4{
+    /*border-bottom:1px solid #EAEDEF;*/
+}
+.toOrder-elem tr td:first-child{
+    border-right: solid 1px #EAEDEF;
+}
+#totToOrder{
+    float:left;
+    line-height:25px;
+}
+div[class*='stockfournisseur']{
+    width:100%;
+    float:left;
+}
+.footer-stockfournisseur{
+    padding-top:25px;
+}
+.footer-stockfournisseur span{
+    float:left;
+}
+#validCommand{
+    margin-left:5px;
+}

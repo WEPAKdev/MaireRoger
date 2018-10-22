@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>cleverreach</name>
+    <displayName><![CDATA[CleverReach&reg; &ndash; THE Email Marketing Solution]]></displayName>
+    <version><![CDATA[1.1.0]]></version>
+    <description><![CDATA[CleverReach&reg; is THE Email Marketing Solution for beginners and experienced users alike
+            that lets you easily create newsletters online and send them to target customers.]]></description>
+    <author><![CDATA[CleverReach GmbH]]></author>
+    <tab><![CDATA[advertising_marketing]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to uninstall?]]></confirmUninstall>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

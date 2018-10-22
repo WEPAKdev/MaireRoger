@@ -1,0 +1,2 @@
+
+$(function(){var b=$("#category-2").html().replace("Acceuil","Produits");$("#category-2").html(b);var a=768;$(window).scroll(function(){var c=$(window).scrollTop();if($(window).width()>=a){if(c>50){$("#header").addClass("retracted")}else{$("#header").removeClass("retracted")}}})});
